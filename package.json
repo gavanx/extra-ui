@@ -1,0 +1,81 @@
+{
+  "name": "extra-ui",
+  "version": "0.1.0",
+  "description": "Extra UI components for VUE",
+  "repository": "https://git.n.xiaomi.com/cloud-fe/extra-ui",
+  "keywords": [
+    "ui",
+    "vue"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.umd.js",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.mjs",
+  "unpkg": "./dist/index.umd.js",
+  "jsdelivr": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "docs",
+    "nuxt.ts"
+  ],
+  "scripts": {
+    "start": "vuepress dev docs",
+    "dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:preview": "vuepress preview docs",
+    "build": "vite build",
+    "test-unit": "vitest run",
+    "coverage": "vitest run --coverage",
+    "release": "npx lint-staged && pnpm test-unit && pnpm build && cl release"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": ">=1",
+    "vanilla-jsoneditor": ">=0",
+    "vue": "2||3"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "lodash-es": "latest",
+    "vue-demi": "latest",
+    "vue-global-config": "latest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@types/lodash-es": "latest",
+    "@types/node": "latest",
+    "@vitejs/plugin-vue2": "latest",
+    "@vitest/coverage-c8": "latest",
+    "@vitest/ui": "latest",
+    "@vue/compiler-sfc": "latest",
+    "@vue/test-utils": "latest",
+    "case-police": "latest",
+    "happy-dom": "latest",
+    "husky": "latest",
+    "index": "latest",
+    "lint-staged": "latest",
+    "lossless-json": "latest",
+    "rome": "latest",
+    "typescript": "latest",
+    "unplugin-auto-import": "latest",
+    "vanilla-jsoneditor": "latest",
+    "vite": "latest",
+    "vite-plugin-dts": "latest",
+    "vitepress": "^1.0.0-alpha.49",
+    "vitest": "latest",
+    "vue": "^2.7.10",
+    "vuepress": "^1.0.0",
+    "zhlint": "latest"
+  }
+}
