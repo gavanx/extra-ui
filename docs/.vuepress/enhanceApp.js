@@ -1,4 +1,5 @@
-import UILib from '../../dist/extra-ui.umd'
+// import UILib from '../../dist/extra-ui.umd'
+import UILib from '../../src/index.ts'
 console.log('UILib', UILib)
 
 import ElementUI from "element-ui";

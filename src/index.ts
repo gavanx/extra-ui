@@ -1,7 +1,9 @@
 import DemoComponent from "./demo/DemoComponent.vue";
+import SelectLimit from "./ui/SelectLimit.vue";
 
 const components = [
-  DemoComponent
+  DemoComponent,
+  SelectLimit,
 ]
 
 const ComponentLibary = {

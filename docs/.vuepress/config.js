@@ -35,7 +35,7 @@ module.exports = {
             {
               title: '组件',
               collapsable: false,
-              children: ['DemoComponent']
+              children: ['DemoComponent', 'SelectLimit']
             }
           ]
         }
