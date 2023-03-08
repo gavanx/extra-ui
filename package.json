@@ -61,6 +61,8 @@
     "@vue/compiler-sfc": "latest",
     "@vue/test-utils": "latest",
     "case-police": "latest",
+    "core-js": "^2.6.12",
+    "element-ui": "^2.15.13",
     "happy-dom": "latest",
     "husky": "latest",
     "index": "latest",
